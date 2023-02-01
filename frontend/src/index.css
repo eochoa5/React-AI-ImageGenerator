@@ -1,0 +1,108 @@
+html{
+  background-color: rgb(65, 65, 65);
+  overflow: hidden;
+}
+
+.imageContainer{
+  background-image:url('https://ericksconstruction.com/img/bg-pattern-1.png');
+  color: white;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.imageContainer img{
+  width: 512px;
+  height: 512px;
+}
+
+.App{
+  height: 99vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  justify-content: space-around;
+}
+.header{
+  background-image:url('https://ericksconstruction.com/img/bg-pattern-1.png');
+  height: 60px;
+  text-shadow: 2px 2px black;
+  display: flex;
+justify-content: center; 
+align-items: center;
+ font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.searchArea{
+  background-image:url('https://ericksconstruction.com/img/bg-pattern-1.png');
+  height:90px;
+  color: white;
+  font-weight: bold;
+}
+
+.searchArea form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.searchArea form input,
+form select {
+  font-size: 20px;
+  width: 500px;
+  padding-left: 10px;
+  height:50px;
+  max-width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  font-size: 20px;
+  border: none;
+  margin-left: 10px;
+  border-radius: 5px;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+}
+
+/* spinner */
+
+.loadingSpinnerContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingSpinner {
+  width: 64px;
+  height: 64px;
+  border: 8px solid;
+  border-color: #000 transparent #555 transparent;
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
